@@ -1,0 +1,15 @@
+{
+  "name": "weatherandnodejs",
+  "version": "1.0.0",
+  "description": "Creating weather node js app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "M. Pavan Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "requests": "^0.3.0"
+  }
+}
