@@ -1,9 +1,12 @@
 {
   "name": "weatherandnodejs",
+  "homepage": "http://mg143pavankumar.github.io/weatherApp-nodejs",
   "version": "1.0.0",
   "description": "Creating weather node js app",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "M. Pavan Kumar",
@@ -11,5 +14,8 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "requests": "^0.3.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }
