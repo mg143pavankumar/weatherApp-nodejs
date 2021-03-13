@@ -1,9 +1,10 @@
-require('dotenv').config();
-const http = require('http');
-const fs = require('fs');
-const requests = require('requests');
+require("dotenv").config();
+const http = require("http");
+const fs = require("fs");
+const requests = require("requests");
+const port = process.env.PORT || 8000;
 
-const homeFile = fs.readFileSync('./home.html', 'utf-8');
+const homeFile = fs.readFileSync("./home.html", "utf-8");
 
 const replaceVal = (tempVal, orgVal) => {
   let temperature = tempVal.replace("{%tempval%}", orgVal.main.temp);
@@ -40,4 +41,4 @@ const server = http.createServer((req, res) => {
   }
 });
 
-server.listen(8000, "127.0.0.1");
+server.listen(port, "127.0.0.1");
